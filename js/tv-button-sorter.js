@@ -1,5 +1,5 @@
 (function(){
-	var $imgs = $('#dvdGallery img'); 							//Stores all images
+	var $imgs = $('#dvdGallery li'); 							//Stores all images
 	var $buttons = $('#buttons');								//Stores button elements
 	var tagged = {};											//Create tagged elements
 

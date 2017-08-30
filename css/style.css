@@ -2,14 +2,14 @@
 body{
 	background-color: #1c1c1c;
 	background-image: url(../images/background/asfalt-light.png);
-	font-family: 'Permanent Marker', cursive;
+	font-family: serif;
 	text-align: center;
 	font-size: 25px;
 	color:#800000;
 }
 
 header h1{
-	font-family: 'Permanent Marker', cursive;
+	font-family: cursive;
 	text-align: center;
 	font-size: 75px;
 	color:#800000;
@@ -17,7 +17,7 @@ header h1{
 }
 
 header p{
-	font-family: 'Permanent Marker', cursive;
+	font-family: serif;
 	text-align: center;
 	font-size: 25px;
 	color:#800000;	
@@ -31,8 +31,10 @@ header p{
 }
 
 img{
-	width: 188px;
-	height: 286px;
+	width: 450px;
+	height: 747px;
+	/*width: 188px;
+	height: 286px;*/
 	padding: 10px;
 }
 /*Search Bar and Button Styling*/
