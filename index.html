@@ -3,22 +3,59 @@
 	<head>
 		<title>Movie By Mood</title>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-		<link rel=stylesheet type="text/css" href="css/style.css">
+		<link rel=stylesheet type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/accordion.css" />
 	</head>
 	<body>
 		<header>
 			<h1>Movie By Mood</h1>
+			<p>This site is to help me figure out what DVD I should watch based on my mood.</p>
 		</header>
+		
 		<div id=search>
 			<input type="text" placeholder="Search by Keywords" id="filter-search"/>
 		</div>
 		<div id="buttons"></div>
 
-		<div id="dvdGallery">
-			<img src="images/dvds/pirates-of-the-carribbean-curse-of-the-black-pearl%20.jpeg" data-tags="Action Adventure Comedy" alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp"/>
-			<img src="images/dvds/pirates-of-the-caribbean-dead-mans-chest.jpeg" data-tags="Action Adventure Comedy" alt="Pirates of the Caribbean Action Adventure Comedy Disney Jonnhy Depp"/>
-			<img src="images/dvds/pirates-of-caribbean-at-worlds-end.jpeg" data-tags="Action Adventure Comedy" alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp"/>
-			<img src="images/dvds/the-princess-bride.jpeg" data-tags="Calmedy" alt="The Princess Bride Calmedy"/>
+		<section id="dvdGallery">
+			<ul class="accordion">
+				<li>
+			<button class="accordion-control" data-tags="Action Adventure Comedy"><img src="images/dvds/pirates-of-the-carribbean-curse-of-the-black-pearl%20.jpeg"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp" /></button>
+					<div class="accordion-panel">
+						<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						Genre: Action, Adventure, Comedy,
+						Stars: Johnny Depp, Orlando Bloom
+						Production Company: Disney</p>
+						</div>
+				</li>
+			<li>
+				<button class="accordion-control" data-tags="Action Adventure Comedy"><img src="images/dvds/pirates-of-the-caribbean-dead-mans-chest.jpeg"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Jonnhy Depp"/></button>
+				<div class="accordion-panel">
+					<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						Genre: Action, Adventure, Comedy,
+						Stars: Johnny Depp, Orlando Bloom
+						Production Company: Disney</p>
+						</div>
+				</li>
+			<li>
+				<button class="accordion-control" data-tags="Action Adventure Comedy"><img src="images/dvds/pirates-of-caribbean-at-worlds-end.jpeg"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp"/>
+				</button>
+				<div class="accordion-panel">
+					<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						Genre: Action, Adventure, Comedy,
+						Stars: Johnny Depp, Orlando Bloom
+						Production Company: Disney</p>
+						</div>
+				</li>
+			<li>
+				<button class="accordion-control" data-tags="Calmedy"><img src="images/dvds/the-princess-bride.jpeg"  alt="The Princess Bride Calmedy"/></button>
+				<div class="accordion-panel">
+					<p>Description: Princess Buttercup discovers her true love is still alive but must be rescued from the prince that is forcing her to marry him
+						Genre: Calmedy, Adventure  </p>
+				</div>
+				</li>
+			</ul>
+			<!--
 			<img src="images/dvds/the-sandlot.jpg" data-tags="Calmedy" alt="The Sandlot Calmedy"/>
 			<img src="images/dvds/holes.jpg" data-tags="Calmedy" alt="Holes Calmedy Disney"/>
 			<img src="images/dvds/all-grown-up.jpg" data-tags="Nostalgia,Cartoons" alt="All Grown Up Kid Funny">
@@ -50,11 +87,16 @@
 			<img src="images/dvds/cinderella-a-twist-in-time.jpeg" data-tags="Other" alt="Cinderella a Twist in Time"/>
 			<img src="images/dvds/alex-rider-operation-stormbreaker.jpeg" data-tags="Other" alt="Alex Rider: Operation Stormbreaker"/>
 			<img src="images/dvds/i-am-number-4.jpeg" data-tags="Other" alt="I Am Number 4"/>
-			<img src="images/dvds/beastly.jpeg" data-tags="Other" alt="Beastly"/>
-		</div>
-	</body>
+			<img src="images/dvds/beastly.jpeg" data-tags="Other" alt="Beastly"/>-->
+		</section>
 		<script src="js/jquery.js"></script>
+		<script src="js/accordion-plugin.js"></script>
+		<script>
+			$('.accordion').accordion(500);
+		</script>
 		<script src="js/tv-button-sorter.js"></script>
+		<!--<script src="js/dvd-search-bar.js"></script>-->
 		<script src="js/tv-search-bar.js"></script>
 		<script src="js/random-button.js"></script>
+	</body>
 </html>

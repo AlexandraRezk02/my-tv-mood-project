@@ -1,5 +1,5 @@
 (function(){
-	var $imgs = $('#dvdGallery img'); 					//Stores all images
+	var $imgs = $('#dvdGallery button'); 					//Stores all images
 	var $buttons = $('#buttons');						//Stores button elements
 	var myMovies = [];									//Create empty DVD array
     var previousDVD;

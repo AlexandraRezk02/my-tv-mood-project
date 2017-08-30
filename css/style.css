@@ -2,15 +2,28 @@
 body{
 	background-color: #1c1c1c;
 	background-image: url(../images/background/asfalt-light.png);
-}
-
-header{
 	font-family: 'Permanent Marker', cursive;
 	text-align: center;
-	font-size: 50px;
+	font-size: 25px;
 	color:#800000;
-	height: 150px;
 }
+
+header h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 75px;
+	color:#800000;
+	margin-bottom: 10px;
+}
+
+header p{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 25px;
+	color:#800000;	
+	
+}
+
 /*Gallery and Images Styling*/
 #dvdGallery{
 	text-align: center;

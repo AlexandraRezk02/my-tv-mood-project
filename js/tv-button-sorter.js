@@ -1,8 +1,8 @@
 (function(){
-	var $imgs = $('#dvdGallery img'); 							//Stores all images
+	var $imgs = $('#dvdGallery button'); 							//Stores all images
 	var $buttons = $('#buttons');								//Stores button elements
 	var tagged = {};											//Create tagged elements
-	
+
 	$imgs.each(function(){										//Loop through images
 		var img = this;											//Store image in variable
 		var tags = $(this).data('tags');						//Get this element's tags

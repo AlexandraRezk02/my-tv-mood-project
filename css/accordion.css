@@ -1,0 +1,27 @@
+.accordion, .menu {
+  margin: 0;
+  padding: 0;
+  overflow: auto;}
+
+.accordion li {
+  list-style-type: none;
+	float: left;
+	/*display: inline-block;*/
+}
+
+.accordion-control {
+  display: block;
+  border-top: 1px solid ;}
+
+.accordion-panel {
+	width: 450px;
+	height: 300px;
+  	display: none;
+}
+
+.accordion-panel p {
+  margin: 20px;}
+
+/*.accordion-panel img {
+  display: block;
+  clear: left;}*/
