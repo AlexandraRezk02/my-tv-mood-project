@@ -6,94 +6,374 @@
 		<link rel="stylesheet" type="text/css" href="css/accordion.css" />
 	</head>
 	<body>
+		<!--Title and Directions-->
 		<header>
 			<h1>Movie By Mood</h1>
 			<p>Need help choosing the right movie for your mood?
 			<br/>
 			Click a genre to narrow down your options. Type in a company or actor you love into the search box. Or just click on movies for more information.</p>
 		</header>
-		
+		<!--Search bar and button filters-->
 		<div id=search>
 			<input type="text" placeholder="Search by Keywords" id="filter-search"/>
 		</div>
 		<div id="buttons"></div>
-
-		<section id="dvdGallery">
+		<!--DVD List-->
+		<div class="dvdGallery">
 			<ul class="accordion">
-			<li data-tags="Action Adventure Comedy">
-			<img src="images/dvds/pirates-of-the-carribbean-curse-of-the-black-pearl%20.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp" />
-						<p class="accordion-panel">Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
-						Genre: Action, Adventure, Comedy,
-						Stars: Johnny Depp, Orlando Bloom
-						Production Company: Disney</p>
+				<li data-tags="Action,Adventure,Comedy">
+					<img src="images/dvds/pirates-of-the-carribbean-curse-of-the-black-pearl%20.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Disney Johnny Depp Orlando Bloom" />
+					<div class="accordion-panel">
+						<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						<br/>Genre: Action, Adventure, Comedy
+						<br/>Stars: Johnny Depp, Orlando Bloom
+						<br/>Production Company: Disney
+						</p>
+					</div>
 				</li>
-			<li data-tags="Action Adventure Comedy">
-				<img src="images/dvds/pirates-of-the-caribbean-dead-mans-chest.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Jonnhy Depp"/>
-				<div class="accordion-panel">
-					<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
-						Genre: Action, Adventure, Comedy,
-						Stars: Johnny Depp, Orlando Bloom
-						Production Company: Disney</p>
-						</div>
+				<li data-tags="Action,Adventure,Comedy">
+					<img src="images/dvds/pirates-of-the-caribbean-dead-mans-chest.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Disney Jonnhy Depp Orlando Bloom"/>
+					<div class="accordion-panel">
+						<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						<br/>Genre: Action, Adventure, Comedy
+						<br/>Stars: Johnny Depp, Orlando Bloom
+						<br/>Production Company: Disney
+						</p>
+					</div>
 				</li>
-			<li data-tags="Action Adventure Comedy">
-				<img src="images/dvds/pirates-of-caribbean-at-worlds-end.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Action Adventure Comedy Disney Johnny Depp"/>
-				<div class="accordion-panel">
-					<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
-						Genre: Action, Adventure, Comedy,
-						Stars: Johnny Depp, Orlando Bloom
-						Production Company: Disney</p>
-						</div>
+				<li data-tags="Action,Adventure,Comedy">
+					<img src="images/dvds/pirates-of-caribbean-at-worlds-end.jpeg" class="accordion-control"  alt="Pirates of the Caribbean Disney Johnny Depp Orlando Bloom"/>
+					<div class="accordion-panel">
+						<p>Description: Jack Sparrow and his high sea adventures with Elizabeth and Will
+						<br/>Genre: Action, Adventure, Comedy
+						<br/>Stars: Johnny Depp, Orlando Bloom
+						<br/>Production Company: Disney
+						</p>
+					</div>
 				</li>
-			<li data-tags="Calmedy">
-				<img src="images/dvds/the-princess-bride.jpeg" class="accordion-control"  alt="The Princess Bride Calmedy"/>
-				<div class="accordion-panel">
-					<p>Description: Princess Buttercup discovers her true love is still alive but must be rescued from the prince that is forcing her to marry him
-						Genre: Calmedy, Adventure  </p>
-				</div>
+				<li data-tags="Calmedy,Adventure">
+					<img src="images/dvds/the-princess-bride.jpeg" class="accordion-control"  alt="The Princess Bride"/>
+					<div class="accordion-panel">
+						<p>Description: Princess Buttercup discovers her true love is still alive but must be rescued from the prince that is forcing her to marry him
+						<br/>Genre: Calmedy, Adventure
+						</p>
+					</div>
+				</li>
+				<li data-tags="Calmedy,Boy Humor">
+					<img src="images/dvds/the-sandlot.jpg"  class="accordion-control" alt="The Sandlot"/>
+					<div class="accordion-panel">
+						<p>Description: Smalls move into a new town, makes new friends, and gets into crazy trouble with his new friends
+						<br/>Genre: Calmedy, Boy Humor
+						</p>
+					</div>
+				</li>	
+				<li data-tags="Calmedy,Boy Humor">
+					<img src="images/dvds/holes.jpg" class="accordion-control" alt="Holes Disney"/>
+					<div class="accordion-panel">
+						<p>Description:Stanley has horrible luck, but that all changes after he goes to Camp Green Lake
+							<br/>Genre: Calmedy, Boy Humor
+							<br/>Production Company: Disney
+						</p>
+					</div>
+				</li>
+				<li data-tags="Cartoons,Comedy">
+					<img src="images/dvds/all-grown-up.jpg" class="accordion-control" alt="All Grown Up Kid Nickelodeon">
+					<div class="accordion-panel">
+						<p>Description: The Rugrats are all grown up and trying to figure out how the world works as teens
+							<br/>Genre: Cartoons, Comedy
+							<br/>Production Company: Nickelodeon
+						</p>
+					</div>
+				</li>
+				<li data-tags="Creepy Fun,Dark,Halloween">
+					<img src="images/dvds/coraline.jpg" class="accordion-control" alt="Coraline Tim Burton"/>
+					<div class="accordion-panel">
+						<p>Description: Coraline moves into a new home and discovers a whole new creepy world
+						<br/>Genre: Creepy Fun, Dark, Halloween
+						</p>
+					</div>
+				</li>
+				<li data-tags="Calmedy,Romantic">
+					<img src="images/dvds/edward-scissorhands.jpg" class="accordion-control" alt="Edward Scissorhands Johnny Depp Winona Ryder Tim Burton"/>
+					<div class="accordion-panel">
+						<p>Description: Edward Scissorhands tries to find his place while living with a unique Avon Lady and her family
+						<br/>Genre: Calmedy, Romantic
+						<br/>Stars: Johnny Depp, Winona Ryder
+						<br/>Director: Tim Burton
+						</p>
+					</div>
+				</li>
+				<li data-tags="Nostalgia,Chaotic,Comedy">
+					<img src="images/dvds/matilda.jpg" class="accordion-control" alt="Matilda Danny DeVito Roald Dahl"/>
+					<div class="accordion-panel">
+						<p>Description: A little girl who has a horrible family but meets wonderful people.
+						<br/>Genre: Nostalgia, Chaotic, Comedy
+						<br/>Director: Danny DeVito
+						<br/>Author of the book: Roald Dahl
+						</p>
+					</div>
+				</li>
+				<li data-tags="Romantic Comedy,Teen Fairytale,Romantic,Comedy">
+					<img src="images/dvds/a-cinderella-story.jpeg" class="accordion-control" alt="A Cinderella Story Hillary Duff"/>
+					<div class="accordion-panel">
+						<p>Description: Sam deals with her stepmom, her stepsisters, love and highschool but everything changes in one night.
+						<br/> Genre: Romantic Comedy, Teen Fairytale
+						<br/>Stars: Hillary Duff, Chad Michael Murrary
+						<br/>Production Company: Warner Brothers
+						</p>
+					</div>
+				</li>
+				<li data-tags="Romantic Comedy,Teen Fairytale,Musical,Romantic,Comedy">
+					<img src="images/dvds/another-cinderella-story.jpeg" class="accordion-control" alt="Another Cinderella Story Selena Gomaz, Drew Seeley"/>
+					<div class="accordion-panel">
+						<p>Description: Mary wants to escape her adoptive mom and sisters and become a dancer in New York
+						<br/>Genre: Romantic Comedy, Teen Fairytale, Musical
+						<br/>Stars: Selena Gomaz, Drew Seeley
+						</p>
+					</div>
+				</li>	
+				<li data-tags="Calmedy,Romantic,Discovering Self">
+					<img src="images/dvds/benny-and-joon.jpeg" class="accordion-control" alt="Benny and Joon Johnny Depp"/>
+					<div class="accordion-panel">
+						<p>Description: Benny and Joon discover more about themselves after they meet a unique and eccentric man named Sam
+						<br/>Genre: Calmedy, Romantic, Discovering Self
+						<br/>Stars: Johnny Depp
+						</p>
+					</div>
+				</li>
+				<li data-tags="Calmedy,Cartoons,Discovering Self">
+					<img src="images/dvds/brother-bear.jpeg" class="accordion-control" alt="Brother Bear Disney"/>
+					<div class="accordion-panel">
+						<p>Description: Kenai got on an adventure with Koda, tries to understand his spirit animal, and tries to get turned back into a human
+						<br/>Genre: Cartoon, Calmedy, Discovering Self
+						<br/>Production Company: Disney
+						</p>
+					</div>
+				</li>
+				<li data-tags="Comedy,Fantasy">
+					<img src="images/dvds/casper.jpeg" class="accordion-control" alt="Casper"/>
+					<div class="accordion-panel">
+						<p>Description: Kat and Casper find out that there is a treasure that Casper’s father left for him and tries to help him find it
+						<br/>Genre: Comedy, Fantasy
+						</p>
+					</div>
+				</li>
+				<li data-tags="Horror,Thriller">
+					<img src="images/dvds/crush.jpeg" class="accordion-control" alt="Crush Lucas Till Sarah Bolger"/>
+					<div class="accordion-panel">
+						<p>Description: Scott is being stalked by his secret admire, but things go too far. Can Scott find out who’s been following him and threatening his friends?
+						<br/>Genre: Horror, Thriller
+						<br/>Stars: Lucas Till, Sarah Bolger
+						</p>
+					</div>
+				</li>
+				<li data-tags="Psychological Thriller,Thriller">
+					<img src="images/dvds/donnie-darko.jpeg" class="accordion-control" alt="Donnie Darko"/>
+					<div class="accordion-panel">
+						<p>Description: It all starts with a bizarre incident and Donnie Darko needs to figure out what everything means
+						<br/>Genre: Psychological Thriller, Thriller
+						</p>
+					</div>
+				</li>
+				<li data-tags="Comedy">
+					<img src="images/dvds/hotel-for-dogs.jpeg" class="accordion-control" alt="Hotel for Dogs Emma Roberts Jake T. Austin"/>
+					<div class="accordion-panel">
+						<p>Description: Two kids find a few stray dogs and take care of them in an abandoned hotel
+						<br/>Genre: Comedy
+						<br/>Stars: Emma Roberts, Jake T. Austin
+						</p>
+					</div>
+				</li>
+				<li data-tags="Kid Thriller,Thriller Comedy,Halloween,Comedy,Thriller">
+					<img src="images/dvds/monster-house.jpeg" class="accordion-control" alt="Monster House"/>
+					<div class="accordion-panel">
+						<p>Description: Three kids are confronted by a Haunted Monster House and tries to figure out how to get they’re stuff back
+						<br/>Genre: Kid Thriller, Thriller Comedy, Halloween
+						</p>
+					</div>
+				</li>
+				<li data-tags="Dark Comedy,High School,Dark,Comedy">
+					<img src="images/dvds/StruckByLightningDVD-F.jpg" class="accordion-control" alt="Struck By Lightning Chris Colfer"/>
+					<div class="accordion-panel">
+						<p>Description: A boy trying to escape his town and goes to great lengths in his high school to get accepted into college
+						<br/>Genre: Dark Comedy, High School
+						<br/>Stars: Chris Colfer
+						<br/>Director:
+						<br/>Author of the book:
+						<br/>Production Company:
+						</p>
+					</div>
+				</li>
+				<li data-tags="Calmedy,80s Classic">
+					<img src="images/dvds/the-breakfast-club.jpeg" class="accordion-control" alt="Breakfast Club"/>
+					<div class="accordion-panel">
+						<p>Description: 5 teens are forced to spend Saturday morning detention with each other
+						<br/>Genre: Calmedy, 80s Classic
+						<br/>Stars:
+						<br/>Director:
+						<br/>Author of the book:
+						<br/>Production Company:
+						</p>
+					</div>
+				</li>
+				<li data-tags="80s Classic,Musical,Comedy">
+					<img src="images/dvds/willy-wonka-and-the-chocolate-factory.jpeg" class="accordion-control" alt="Willy Wonka and the Chocolate Factory Gene Wilder"/>
+					<div class="accordion-panel">
+						<p>Description: 5 kids are lucky enough to enter Willy Wonka’s Chocolate Factory, now they should behave to win the grand prize
+						<br/>Genre: 80s Classic, Musical, Comedy
+						<br/>Stars:Gene Wilder
+						<br/>Author of the book: Roald Dahl
+						</p>
+					</div>
+				</li>
+				<li data-tags="Halloween,Comedy,Chaotic">
+					<img src="images/dvds/young-frankenstien.jpeg" class="accordion-control" alt="oung Frankenstein Gene Wilder"/>
+					<div class="accordion-panel">
+						<p>Description: A young doctor finds out that his great-grandfather left behind his notes on how he created his monster
+						<br/>Genre: Halloween, Comedy, Chaotic
+						<br/>Stars: Gene Wilder
+						</p>
+					</div>
+				</li>
+				<li data-tags="">
+					<img src="images/dvds/a-beautiful-mind.jpeg" class="accordion-control" alt="Gene Wilder"/>
+					<div class="accordion-panel">
+						<p>Description: A young and ambitious Mathematician goes to college but gets caught up in secret work
+						<br/>Genre: Other
+						</p>
+					</div>
+				</li>
+				<li data-tags="YA,Comedy,Chaotic">
+					<img src="images/dvds/neighbors.jpeg" class="accordion-control" alt="Neighbors Zac Efron David Franco"/>
+					<div class="accordion-panel">
+						<p>Description: A family deals with Frat Brothers for neighbors
+						<br/>Genre: YA, Comedy, Chaotic
+						<br/>Stars: Zac Efron, David Franco
+						</p>
+					</div>
+				</li>
+				<li data-tags="Thriller,Action">
+					<img src="images/dvds/nerve.jpeg" class="accordion-control" alt="Nerve Emma Roberts David Franco"/>
+					<div class="accordion-panel">
+						<p>Description: A girl stops being known as the shy quiet girl and starts taking dares through an app called Nerve
+						<br/>Genre: Thriller, Action
+						<br/>Stars: Emma Roberts, David Franco
+						</p>
+					</div>
+				</li>
+				<li data-tags="Thriller,Creepy Comedy,Comedy">
+					<img src="images/dvds/sleepy-hollow.jpeg" class="accordion-control" alt="Sleepy Hollow Johnny Depp"/>
+					<div class="accordion-panel">
+						<p>Description: The squeamish Ichabod Crane is a detective sent to investigate the murders in Sleepy Hollow
+						<br/>Genre: Thriller, Creepy Comedy
+						<br/>Stars: Johnny Depp
+						</p>
+					</div>
+				</li>
+				<li data-tags="Magic,Adventure,Mystery">
+					<img src="images/dvds/now-you-see-me.jpeg" class="accordion-control" alt="Now You See Me Jesse Eisenberg David Franco Morgan Freeman"/>
+					<div class="accordion-panel">
+						<p>Description: Magicians team up and become the Four Horsemen to help an unknown employer rob banks and give back to the poor
+						<br/>Genre: Magic, Adventure, Mystery
+						<br/>Stars: Jesse Eisenberg, David Franco, Morgan Freeman
+						</p>
+					</div>
+				</li>
+				<li data-tags="Magic,Adventure,Mystery,Revenge">
+					<img src="images/dvds/now-you-see-me-2.jpeg" class="accordion-control" alt="Now You See Me 2 Jesse Eisenberg, David Franco, Morgan Freeman, Daniel Radicliffe"/>
+					<div class="accordion-panel">
+						<p>Description: The Four Horsemen learn to trust each other and try to save one of their own
+						<br/>Genre: Magic, Adventure, Mystery, Revenge
+						<br/>Stars: Jesse Eisenberg, David Franco, Morgan Freeman, Daniel Radicliffe
+						</p>
+					</div>
+				</li>
+				<li data-tags="Anime,Feel Good,Comedy">
+					<img src="images/dvds/kodocha-v1.jpeg" class="accordion-control" alt="Kodocha"/>
+					<div class="accordion-panel">
+						<p>Description: Sana is a Child Star but she deals with crazy middle school shenanigans
+						<br/>Genre: Anime, Feel Good, Comedy
+						</p>
+					</div>
+				</li>
+				<li data-tags="Nostalgia,Cartoon,Comedy,Halloween">
+					<img src="images/dvds/scooby-doo-and-the-ghoul-school.jpeg" class="accordion-control" alt="Scooby Doo and the Ghoul School"/>
+					<div class="accordion-panel">
+						<p>Description: Shaggy, Scooby, and Scrappy sign up to be gym teachers at a Haunted School for young ghoul girls
+						<br/>Genre: Nostalgic, Cartoon, Comedy, Halloween
+						</p>
+					</div>
+				</li>
+				<li data-tags="Musical,High School,Calmedy">
+					<img src="images/dvds/band-slame.jpeg" class="accordion-control" alt="Band Slam Aly Alison Allison Michalka, Vanessa Hudgens"/>
+					<div class="accordion-panel">
+						<p>Description: Will meets Charlotte, becomes her band’s manager and has a crush on Sa5m, can he balance it all?
+						<br/>Genre: Musical, High School, Calmedy
+						<br/>Stars: Aly Michalka, Vanessa Hudgens
+						</p>
+					</div>
+				</li>
+				<li data-tags="Rewrite">
+					<img src="images/dvds/cinderella-a-twist-in-time.jpeg" class="accordion-control" alt="Cinderella a Twist in Time"/>
+					<div class="accordion-panel">
+						<p>Description: The Evil Stepmother steals the Fairy Godmother’s wand and uses it to control time to ensure one of her daughters’ marriage to the prince
+						<br/>Genre: Rewrite
+						<br/>Production Company: Disney
+						</p>
+					</div>
+				</li>
+				<li data-tags="Action,Adventure">
+					<img src="images/dvds/alex-rider-operation-stormbreaker.jpeg" class="accordion-control" alt="Alex Rider: Operation Stormbreaker Alex Pettyfer"/>
+					<div class="accordion-panel">
+						<p>Description: Alex Rider find out that his guardian was a British spy, he gets called to help MI6, and tries to save England as a spy
+						<br/>Genre: Action, Adventure
+						<br/>Stars: Alex Pettyfer
+						</p>
+					</div>
+				</li>
+				<li data-tags="Rewrite">
+					<img src="images/dvds/beastly.jpeg" class="accordion-control" alt="Beastly Alex Pettyfer, Vanessa Hugdens, Mary-Kate Olsen, Neil Patrick Harris"/>
+					<div class="accordion-panel">
+						<p>Description: Kyle is an arrogant man that only cares about “beauty’ and looking good. But Kendra decides to teach Kyle a lesson and places a curse on him
+						<br/>Genre: Rewrite
+						<br/>Stars: Alex Pettyfer, Vanessa Hugdens, Mary-Kate Olsen, Neil Patrick Harris
+						</p>
+					</div>
+				</li>
+				<li data-tags="Scy-fy,Adventure">
+					<img src="images/dvds/i-am-number-4.jpeg" class="accordion-control" alt="I Am Number 4 Alex Pettyfer"/>
+					<div class="accordion-panel">
+						<p>Description: Aliens are hiding on earth from hunters and trying to have a normal teenage life
+						<br/>Genre: Scy-fy, Adventure
+						<br/>Stars: Alex Pettyfer
+						<br/>Director:
+						<br/>Author of the book:
+						<br/>Production Company:
+						</p>
+					</div>
 				</li>
 			</ul>
-			<!--
-			<img src="images/dvds/the-sandlot.jpg" data-tags="Calmedy" alt="The Sandlot Calmedy"/>
-			<img src="images/dvds/holes.jpg" data-tags="Calmedy" alt="Holes Calmedy Disney"/>
-			<img src="images/dvds/all-grown-up.jpg" data-tags="Nostalgia,Cartoons" alt="All Grown Up Kid Funny">
-			<img src="images/dvds/coraline.jpg" data-tags="Other" alt="Coraline Dark Kiddy Humor Tim Burton"/>
-			<img src="images/dvds/edward-scissorhands.jpg" data-tags="Other" alt="Edward Scissorhands Calmedy Johnny Depp Tim Burton"/>
-			<img src="images/dvds/matilda.jpg" data-tags="Nostalgia" alt="Matilda Comedy"/>
-			<img src="images/dvds/a-cinderella-story.jpeg" data-tags="Teen Fairy Tale" alt="A Cinderella Story Teen Fairy Tale Hillary Duff"/>
-			<img src="images/dvds/another-cinderella-story.jpeg" data-tags="Teen Fairy Tale" alt="Another Cinderella Story Teen Fairy Tale Selena Gomaz"/>
-			<img src="images/dvds/benny-and-joon.jpeg" data-tags="Calmedy" alt="Benny and Joon Calmedy Johnny Depp"/>
-			<img src="images/dvds/brother-bear.jpeg" data-tags="Coming of Age,Cartoons" alt="Brother Bear Disney Coming of Age"/>
-			<img src="images/dvds/casper.jpeg" data-tags="Coming of Age,Halloween" alt="Casper Coming of Age Ghosts"/>
-			<img src="images/dvds/crush.jpeg" data-tags="Thriller" alt="Crush Thriller"/>
-			<img src="images/dvds/donnie-darko.jpeg" data-tags="Thriller" alt="Crush Thriller Psychological Thriller"/>
-			<img src="images/dvds/hotel-for-dogs.jpeg" data-tags="Calmedy" alt="Hotel for Dogs Emma Roberts"/>
-			<img src="images/dvds/monster-house.jpeg" data-tags="Cartoons,Comedy,Thriller,Halloween" alt="Monster House Halloween Cartoon Thriller"/>
-			<img src="images/dvds/StruckByLightningDVD-F.jpg" data-tags="Other" alt="Struck By Lightning"/>
-			<img src="images/dvds/the-breakfast-club.jpeg" data-tags="Other" alt="Breakfast Club"/>
-			<img src="images/dvds/willy-wonka-and-the-chocolate-factory.jpeg" data-tags="Other" alt="Willy Wonka and the Chocolate Factory Gene Wilder"/>
-			<img src="images/dvds/young-frankenstien.jpeg" data-tags="Halloween" alt="Young Frankenstein Gene Wilder"/>
-			<img src="images/dvds/a-beautiful-mind.jpeg" data-tags="Other" alt="A Beautiful Mind"/>
-			<img src="images/dvds/neighbors.jpeg" data-tags="Other" alt="Neighbors Zac Efron"/>
-			<img src="images/dvds/nerve.jpeg" data-tags"Other" alt="Nerve Emma Roberts Dave Franco"/>
-			<img src="images/dvds/sleepy-hollow.jpeg" data-tags="Thriller" alt="Sleepy Hollow Johnny Depp"/>
-			<img src="images/dvds/now-you-see-me.jpeg" data-tags="Other" alt="Now You See Me Jesse Eisenberg Dave Franco"/>
-			<img src="images/dvds/now-you-see-me-2.jpeg" data-tags="Other" alt="Now You See Me 2 Jesse Eisenberg Dave Franco"/>
-			<img src="images/dvds/kodocha-v1.jpeg" data-tags="Anime" alt="Kodocha Anime"/>
-			<img src="images/dvds/scooby-doo-and-the-ghoul-school.jpeg" data-tags="Cartoons,Halloween,Nostalgia" alt="Scooby Doo and the Ghoul School Comedy"/>
-			<img src="images/dvds/band-slame.jpeg" data-tags="Other" alt="Band Slam"/>
-			<img src="images/dvds/cinderella-a-twist-in-time.jpeg" data-tags="Other" alt="Cinderella a Twist in Time"/>
-			<img src="images/dvds/alex-rider-operation-stormbreaker.jpeg" data-tags="Other" alt="Alex Rider: Operation Stormbreaker"/>
-			<img src="images/dvds/i-am-number-4.jpeg" data-tags="Other" alt="I Am Number 4"/>
-			<img src="images/dvds/beastly.jpeg" data-tags="Other" alt="Beastly"/>-->
-		</section>
+		</div>
+		<!--What you need to put your own DVDs in the list-->
+		<!--<li data-tags="Button titles here. Separate with a comma (do not put spaces inbetween each category)">
+					<img src="Images here" class="accordion-control" alt="Search bar keywords here"/>
+					<div class="accordion-panel">
+						<p>Description:
+						<br/>Genre:
+						<br/>Stars:
+						<br/>Director:
+						<br/>Author of the book:
+						<br/>Production Company:
+						</p>
+					</div>
+				</li>-->
 		<script src="js/jquery.js"></script>
 		<script src="js/accordion-plugin.js"></script>
 		<script>
 			$('.accordion').accordion(500);
 		</script>
-		<script src="js/tv-button-sorter.js"></script>
-		<!--<script src="js/dvd-search-bar.js"></script>-->
+		<!--<script src="js/tv-button-sorter.js"></script>-->
+		<script src="js/test-crossfilter.js"></script>
 		<script src="js/tv-search-bar.js"></script>
 		<script src="js/random-button.js"></script>
 	</body>

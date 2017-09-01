@@ -1,5 +1,5 @@
 (function(){
-	var $imgs = $('#dvdGallery img ');
+	var $imgs = $('.dvdGallery img');
 	var $search = $('#filter-search');
 	var cache = [];
 	

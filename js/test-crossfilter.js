@@ -32,15 +32,16 @@
 	$.each(tagged, function(tagName){						//For each tag name
 		$('<button/>', {									//Create empty button
 			text: tagName + ' (' + tagged[tagName].length + ')', //Add tag name
-			click: function() {								//Add click handler
-				$(this)										//The button clicked on
-				.addClass('active')							//Make clicked item active
-				.siblings()									//Get its siblings
-				.removeClass('active');						//Remove active from them
+				.on('click', function(e) {					
+				if ($(this).hasClass('')) {								//The button clicked on
+				.addClass('active')
 				$dvdContainer								//With all of the dvds
 				.hide()										//Hide them
 				.filter(tagged[tagName])					//Find ones with this tag
-				.show();									//Show just those dvds
+				.show();
+				}	else {
+					.removeClass('active');	
+				}
 			}
 		}).appendTo($buttons);								//Add to the buttons
 	});
