@@ -1,6 +1,6 @@
 $('div.buttons').tagSort({
 	items:'.dvdContainer',
-	tagElement: 'button',
+	tagElement: 'span',
 	sortType: 'exclusive',
 });
 
