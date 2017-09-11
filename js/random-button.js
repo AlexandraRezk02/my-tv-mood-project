@@ -1,6 +1,6 @@
 (function(){
-	var $dvdContainer = $('.dvdGallery li'); 			//Stores all images
-	var $buttons = $('#buttons');						//Stores button elements
+	var $dvdContainer = $('.dvdGallery .dvdContainer'); 			//Stores all images
+	var $randomButton = $('#randomButton');						//Stores button elements
 	var myMovies = [];									//Create empty DVD array
 	
 	$dvdContainer.each(function(){						//Loop through DVDs
@@ -26,5 +26,5 @@
 			.filter(randomDVD)
 			.show();									//Show just that dvd
 		}
-	}).appendTo($buttons);								//Add to the buttons container
+	}).appendTo($randomButton);								//Add to the buttons container
 }());

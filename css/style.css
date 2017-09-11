@@ -27,18 +27,42 @@ header p{
 /*Gallery and Images Styling*/
 .dvdGallery{
 	text-align: center;
-	margin: 20px;
+	margin: 0px;
+	padding:20px;
+	clear: both;
+}
+
+.dvdContainer{
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 img{
 	width: 188px;
 	height: 286px;
-	padding: 10px;
+	/*padding: 10px;*/
 }
+
 /*Search Bar and Button Styling*/
-#search, #buttons{
+#search {
 	text-align: center;
-	margin-top: 10px;
+	margin: 10px;
+	display: block;
+}
+
+#randomButton button{
+	text-align: center;
+	background-color: #ccc;
+	color: #00000;
+	padding: 10px 20px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	border-radius: 24px;
+	overflow: hidden;
+	outline: none;
+	
 }
 
 #search input[type=text]{
@@ -59,23 +83,28 @@ img{
 	outline: none;
 }
 
-#buttons button{
+.buttons button, #randomButton button{
 	text-align: center;
 	background-color: #ccc;
 	color: #00000;
 	padding: 10px 20px;
 	margin-right: 5px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	border-radius: 24px;
-	transition-duration: 0.4s;
+	overflow: hidden;
+	outline: none;
 }
 
-#buttons button:hover{
-	background-color: #800000;
-	color: #ccc;
-	outline:none;
+.buttons button:hover, #randomButton button:hover{
+	cursor: pointer;
+    border: 5px blue solid;
 }
 
-#buttons button:focus{ 
-outline: none;
+.buttons button.active{
+	 border: 5px blue solid;
+}
+
+#randomButton button.active:active{
+	border: 5px blue solid;
 }

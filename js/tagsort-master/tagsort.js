@@ -35,9 +35,9 @@
           var tagsData = $element.attr(tagSortEngine.options.tagAttr);
           var tagDelimiter = tagSortEngine.options.tagsDelimiter;
           tagsData = (typeof tagsData === 'string' && tagsData !== '') ?  tagsData : 'Untagged';
-          //var elementTags = tagsData.match(/,\s+/) ? tagsData.split(', ') : tagsData.split(',');
-          var re = new RegExp("\\s*[\\"+tagDelimiter+"]+\\s*","gi");
-		      var elementTags = tagsData.split(re);
+          var elementTags = tagsData.match(/,\s+/) ? tagsData.split(', ') : tagsData.split(',');
+          //var re = new RegExp("\\s*[\\"+tagDelimiter+"]+\\s*","gi");
+		      //var elementTags = tagsData.split(re);
             // Inclusive Filtering only: Loop through each element's tags
             $.each(elementTags, function(key, v) {
               var tagName = v;
@@ -212,12 +212,12 @@
       },
       completeReset: function(tagsContainer, selectedTags){
 	tagSortEngine.initialize(tagsContainer);
-	/*if(selectedTags!=null){
+	if(selectedTags!=null){
 	    tagSortEngine.tagElements.each(function(){
 		if(selectedTags.includes($(this).attr("value")))
 		$(this).addClass('active');
 	    });
-	  }*/
+	  }
 	tagSortEngine.runCallback(tagsContainer);
       }  
     }

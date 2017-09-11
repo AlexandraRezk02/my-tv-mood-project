@@ -1,19 +1,31 @@
-function myFunction(){
-	//Declare variables
-	var input, filter, div, description, dvdBtn, i;
-	input = document.getElementById('filter-search');
-	filter = input.value.toLowerCase;
-	div = document.getElementsByClassName('accordion-panel');
-	description = div.getElementsByTagName('p');
+(function(){
+	var $imgs = $('.dvdGallery img');
+	var $search = $('#filter-search');
+	var cache = [];
 	
-	//Loop through all list items and hide those who don't match the search query
-	for (i = 0, i < description.length; i++){
-		dvdBtn = description[i].getElementsByTagName('img')[0];
-		if(div.innerHTML.toLowerCase().indexOf(filter) > -1) {
-			dvdBtn[i].style.display = "";
-		} 
-			else {
-				dvdBtn[i].style.display = "none";
+	$imgs.each(function(){
+		cache.push({
+			element: this,
+			text: this.alt.trim().toLowerCase()
+		});
+	});
+	
+	function filter() {
+		var query = this.value.trim().toLowerCase()
+		
+		cache.forEach(function(img){
+			var index = 0;
+			if(query) {
+				index = img.text.indexOf(query);
 			}
+			
+			img.element.style.display = index === -1 ? 'none' : '';
+		});
 	}
-}
+	
+	if ('oninput' in $search[0]) {
+		$search.on('input', filter);
+	} else {
+		$search.on('keyup', filter);
+	}
+}());
