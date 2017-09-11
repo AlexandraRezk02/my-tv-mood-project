@@ -50,7 +50,7 @@ img{
 	display: block;
 }
 
-#randomButton button{
+#randomButton span{
 	text-align: center;
 	background-color: #ccc;
 	color: #00000;
@@ -83,10 +83,10 @@ img{
 	outline: none;
 }
 
-.buttons button, #randomButton button{
+.buttons span, #randomButton span{
 	text-align: center;
 	background-color: #ccc;
-	color: #00000;
+	color: #000000;
 	padding: 10px 20px;
 	margin-right: 5px;
 	margin-bottom: 10px;
@@ -94,17 +94,18 @@ img{
 	border-radius: 24px;
 	overflow: hidden;
 	outline: none;
+	display: inline-block
 }
 
-.buttons button:hover, #randomButton button:hover{
+.buttons span:hover, #randomButton span:hover{
 	cursor: pointer;
-    border: 5px blue solid;
+    background-color: blue;
 }
 
-.buttons button.active{
-	 border: 5px blue solid;
+.buttons span.active{
+	 background-color: blue;
 }
 
-#randomButton button.active:active{
-	border: 5px blue solid;
+#randomButton span.active:active{
+	background-color: blue;
 }
